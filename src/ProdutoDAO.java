@@ -1,5 +1,3 @@
-import java.sql.*;
-
 public class ProdutoDAO {
 
     // Metodo CREATE: Adiciona um produto no banco
