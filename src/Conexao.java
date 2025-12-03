@@ -9,13 +9,13 @@ public class Conexao {
     private static final String USUARIO = "root";
     private static final String SENHA = "sua_senha";
 
-    // Método estático para obter uma conexão com o banco
+    // Metodo estatico para obter uma conexao com o banco
     public static Connection getConnection() {
         try {
-            // Estabelece a conexão com o banco de dados
+            // Estabelece a conexao com o banco de dados
             return DriverManager.getConnection(URL, USUARIO, SENHA);
         } catch (SQLException e) {
-            // Trata a exceção se a conexão falhar
+            // Trata a excecao se a conexao falhar
             System.out.println("Erro ao conectar ao banco de dados: " + e.getMessage());
             return null;
         }
